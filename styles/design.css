@@ -1,0 +1,237 @@
+/*------common design ----------------*/
+body{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    
+    width: 65%;
+    margin: auto;
+   
+}
+h1{
+    font-size: 50px;
+}
+/* header main{
+    display: grid;
+    align-items: center;
+} */
+/*---------header design--------------*/
+.root-top{
+    display: flex;
+    justify-content: center;
+    /* margin: 50px; */
+}
+.root-sector{
+    /* width: 1021px; */
+    height: 550px;
+    /* margin: auto; */
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+    /* margin: auto; */
+    padding: 60px;
+    display: flex;
+}
+/* .root-font{
+    width: 531px;
+    height: 424px;
+} */
+.root-image{
+    width: 581px;
+    height: 610px;
+    margin-left: 5px;
+}
+.root-buttom{
+    background-color: red;
+    padding: 15px;
+    color: white;
+}
+/*-------------mead sector----------*/
+main{
+    /* display: grid;
+    justify-content: center;
+    margin: auto;
+    width: 1021px;
+    height: 550px; */
+    margin: auto;
+}
+
+.author-container{
+    display: grid;
+   
+    /* padding-left: 20px; */
+    
+}
+
+.anouther-count{
+    display: flex;
+    margin-top: 100px;
+    
+} 
+.mini-container{
+    /* width: 250px; */
+    height: 312px;
+    background-color: blueviolet;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.button-unit{
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+}
+.button-design{
+    width: 252px;
+    height: 64px;
+    display: block;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+#design{
+    background-color: red;
+}
+
+.mbutton-div{
+    margin-bottom: 100px;
+}
+
+.main-button{
+    background-color: red;
+    padding: 15px;
+    color: white;
+}
+/*-------------------------Blogs---------------*/
+.blogs-sector{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+}
+.blogs-unit{
+    width: 312px;
+    height: 362px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.size-image{
+    width: 300px;
+    height: 250px;
+}
+i{
+    color: gray;
+}
+/*-------------------Footer-----------------*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:844px) {
+
+
+    .root-top{       
+        justify-content: center;
+    }
+
+    .root-sector{
+        width: 521px;
+        height: 620px;
+        background-color: blueviolet;
+        border-radius: 10px;
+        color: white;
+        /* padding: 60px; */
+        display: grid;
+        align-content: center;
+    }
+
+    .root-font{
+        text-align: center;
+    }
+
+    .root-font h1{
+       font-size: 40px;
+       text-align: center;
+    }
+
+    .root-font p{
+        font-size: small;
+        text-align: center;
+    } 
+
+    .root-image{
+        width: 230px;
+        height: auto;
+        margin-left: 5px;
+        align-content: center;
+    }
+
+
+    .anouther-count{
+        display: grid;
+        /* margin-top: 100px;  */
+       
+    }
+
+    .mini-container{
+        background: none;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    .blogs-sector{
+        grid-template-columns: repeat(1, 1fr);
+        /* position: absolute; */
+    }
+
+   
+    
+}
+
+/*--------------tablet-----------*/
+
+@media only screen and (min-width:845px) and (max-width:992px) {
+    
+    .root-font p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 300px;
+    }
+
+    
+    .button-unit{
+        display: flex; 
+        justify-content: space-between;
+
+    }
+
+    .anouther-count{
+        display: grid;
+    }
+    .button-design{
+        width: 252px;
+        height: 64px;
+        margin: 5px;
+    }
+        
+    .mini-container{
+        background: none;
+        width:550px;
+        height: 150px;
+    }
+    .blogs-sector{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}  
